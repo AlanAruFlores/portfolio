@@ -14,3 +14,11 @@
 .link_item{
      @apply border-b-2 border-solid border-white w-[60%] mx-auto pb-5 text-white filter-none text-sm max-w-[300px];
 }
+
+.image{
+    mask-image: linear-gradient(
+        #030030 40%,
+        transparent
+        /* #1034a9 */
+    );
+}

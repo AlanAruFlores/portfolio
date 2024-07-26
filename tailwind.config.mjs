@@ -4,13 +4,13 @@ export default {
 	theme: {
 		extend: {
 			backgroundColor:{
-				"blue-custom": "#541dfb",
+				"blue-custom": "#071952",
 			},
 			colors:{
-				"blue-custom": "#541dfb",
+				"blue-custom": "#1034a9",
 			},
 			borderColor:{
-				"light-blue":"#050C9C"
+				"light-blue":"#071952",
 			},
 			backgroundImage:{
 				"wave": "url('../img/wave.svg')",
@@ -20,7 +20,10 @@ export default {
 				"merriweather":'"Merriweather Sans", sans-serif'
 			},
 			boxShadow:{
-				"custom": "0px 0px 4px 1px #FFFFFF"
+				"custom": "0px 0px 4px 1px #FFFFFF",
+				"custom-blue": "0px 0px 15px 10px #071952",
+				"custom-blue-hover": "0px 0px 15px 20px #071952"
+
 			}
 		},
 	},
