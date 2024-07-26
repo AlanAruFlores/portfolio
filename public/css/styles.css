@@ -8,7 +8,9 @@
 .blue-color-gradient-button
 { 
     background: rgb(15,15,15);
-    background: linear-gradient(90deg, #030b29 0%, #000f4b 100%);
+    /* background: linear-gradient(90deg, #030b29 0%, #2267F2 100%); */
+    background: linear-gradient(90deg, #2267F2 0%, #051346 100%);
+
 }
 
 .link_item{

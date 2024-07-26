@@ -5,9 +5,10 @@ export default {
 		extend: {
 			backgroundColor:{
 				"blue-custom": "#071952",
+				"blue-custom-light":"#2267F2"
 			},
 			colors:{
-				"blue-custom": "#1034a9",
+				"blue-custom": "#2267F2",
 			},
 			borderColor:{
 				"light-blue":"#071952",

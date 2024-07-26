@@ -1,12 +1,41 @@
-<div class="h-[500px] py-8 flex flex-col items-center w-[80%] max-w-[900px] mx-auto">
-    <div class="block w-[250px] h-[250px] bg-blue-custom rounded-full shadow-custom-blue hover:shadow-custom-blue-hover transition-all">
-        <img src="/public/img/man.png" class="w-[170px] mx-auto py-6 image">
-    </div>
-    <div class="mt-16 space-y-2">
-        <h1 class="text-white text-4xl font-bold">Hola, Soy <span class="text-blue-custom">Alan</span></h1>
-        <p class="text-white font-semibold text-[15px]">Soy un <span class="text-blue-custom" id="element">Desarrollador Web FullStack</span></p>
+---
+    const socialMediasArray = [
+        {
+            url: "#",
+            src: "/public/img/media/twitter.svg"
+        },
+        {
+            url: "#",
+            src: "/public/img/media/facebook.svg"
+        },
+        {
+            url: "#",
+            src: "/public/img/media/instagram.svg"
+        },
+        {
+            url: "#",
+            src: "/public/img/media/github.svg"
+        },
+    ]
+---
 
-        <p class="text-white font-thin text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium provident magni debitis aut doloremque pariatur vitae impedit odit a harum explicabo</p>
+<div class="h-[500px] py-8 flex flex-col items-center w-[80%] max-w-[900px] mx-auto
+    md:flex-row-reverse md:justify-around md:items-center">
+    <div class="block w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] bg-blue-custom-light rounded-full shadow-custom-blue hover:shadow-custom-blue-hover transition-all">
+        <img src="/public/img/man.png" class="w-[170px] lg:w-[240px] mx-auto py-6 image ">
+    </div>
+    <div class="mt-16 space-y-3 max-w-[500px]">
+        <h1 class="text-white text-4xl font-bold lg:text-5xl">Hola, Soy <span class="text-blue-custom ">Alan</span></h1>
+        <p class="text-white font-semibold text-[15px] lg:text-[25px]">Soy un <span class="text-blue-custom
+            " id="element"></span></p>
+
+        <p class="text-white font-thin text-[12px]  lg:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium provident magni debitis aut doloremque pariatur vitae impedit odit a harum explicabo</p>
+        <div class="flex gap-2 lg:gap-4">
+            {socialMediasArray.map(x=>
+                <a href={x.url} class="w-8 bg-white rounded-full p-1 shadow-custom shadow-white lg:w-10">
+                    <img src={x.src}>
+                </a>)}
+        </div>
     </div>
 </div>
 
