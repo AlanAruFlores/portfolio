@@ -1,0 +1,48 @@
+--- 
+   import EducationItem from "../components/education_item.astro";
+
+   const educationsArray = [
+        {
+            title:"Universidad Nacional de la Matanza",
+            subtitle:"Tecnico Superior en Desarrollo Web",
+            description:"Actualmente en formación en la carrera de Desarrollador Web en la Universidad de La Matanza",
+            date:"2023 - Hoy"
+        },
+        {
+            title:"#YoProgramo",
+            subtitle:"Argentina Programa",
+            description:"En el curso, adquirí habilidades para desarrollar aplicaciones utilizando el framework Spring Boot para el backend y Angular para el frontend. Como proyecto final, desarrollé un portafolio utilizand las tecnologías mencionadas anteriormente.",
+            date:"2022 - 2023"
+        },
+        {
+            title:"Codo a Codo 4.0",
+            subtitle:"Especializacion en Spring",
+            description:"Durante el curso, tuve la oportunidad de introducirme enel framework Spring Boot, lo que marcó el comienzo demi experiencia en el desarrollo de aplicaciones backend",
+            date:"2022"
+        },
+        {
+            title:"Codo a Codo 4.0",
+            subtitle:"FullStack Java",
+            description:"En el curso de Java ofrecido por el programa 'Codo a Codo', obtuve una formación integral en el lenguaje de programación Java, cubriendo desde los conceptos básicos hasta aspectos más avanzados del desarrollo de software",
+            date:"2022"
+        },
+        {
+            title:"Ingles",
+            subtitle:"Centro Educativo Complementariode Idioma Extranjero N°11",
+            description:"Durante mi formación en el curso, inicié mi aprendizaje del inglés desde un nivel básico y, a lo largo del tiempo, logré avanzar hasta un nivel intermedio. Este proceso incluyó el desarrollo de habilidades en comprensión oral, lectura, escritura y conversación.",
+            date:"2014-2020"
+        }
+    ];
+    
+---
+
+
+<div class="w-full bg-slate-50 py-20 mt-20 md:mt-10 text-black">
+    <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl m-0">Educacion</h1>
+    <div class="py-8 flex flex-col items-center w-[80%] max-w-[900px] mx-auto ">  
+        <ol class="relative border-s border-gray-200 dark:border-blue-custom mx-auto">                  
+            {educationsArray.map(x=><EducationItem title={x.title} subtitle={x.subtitle} description={x.description} date={x.date}/>)}  
+        </ol>
+        
+    </div>
+</div>

@@ -1,8 +1,7 @@
 
 .blue-color-gradient 
 { 
-    background: rgb(15,15,15);
-    background: linear-gradient(90deg, rgba(15,15,15,1) 0%, #000724 100%);
+    background:linear-gradient(90deg, rgba(15,15,15,1) 0%, #000724 100%);
 }
 
 .blue-color-gradient-button
@@ -12,7 +11,6 @@
     background: linear-gradient(90deg, #2267F2 0%, #051346 100%);
 
 }
-
 .link_item{
      @apply border-b-2 border-solid border-white w-[60%] mx-auto pb-5 text-white filter-none text-sm max-w-[300px];
 }

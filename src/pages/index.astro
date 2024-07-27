@@ -1,12 +1,11 @@
 ---
- import Navbar from "../components/navbar.astro";
- import AboutMe from "../components/aboutme.astro";
- import Experience from "../components/experience.astro";
- import Education from "../components/education.astro";
- import Technologies from "../components/tecnologias.astro";
- import ContactMe from "../components/contactme.astro";
- import Footer from "../components/footer.astro";
-
+ import Navbar from "./navbar.astro";
+ import AboutMe from "./aboutme.astro";
+ import Education from "./education.astro";
+ import Proyects from "./proyects.astro";
+ import Technologies from "./technologies.astro";
+ import ContactMe from "./contactme.astro";
+ import Footer from "./footer.astro";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,15 +19,13 @@
 	<link rel="stylesheet" href="/public/css/styles.css">
 	<title>Portfolio</title>
 </head>
-<body class="blue-color-gradient  font-merriweather">
+<body class="body blue-color-gradient  font-merriweather">
 	<Navbar/>
 	<AboutMe/>
-	<Experience/>
 	<Education/>
 	<Technologies/>
+	<Proyects/>
 	<ContactMe/>
 	<Footer/>
-	
-
 </body>
 </html>
