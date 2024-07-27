@@ -18,7 +18,8 @@ export default {
 				"wave-reverse": "url('../img/wave-reverse.svg')"
 			},
 			fontFamily:{
-				"merriweather":'"Merriweather Sans", sans-serif'
+				"merriweather":'"Merriweather Sans", sans-serif',
+				"sourceCode":'"Source Code Pro", monospace'
 			},
 			boxShadow:{
 				"custom": "0px 0px 4px 1px #FFFFFF",
