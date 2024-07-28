@@ -13,6 +13,9 @@
     "@astrojs/check": "^0.8.2",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.12.2",
+    "astro-carousel": "^2.0.8",
+    "photoswipe": "^5.4.4",
+    "swiper": "^11.1.8",
     "tailwindcss": "^3.4.6",
     "typed.js": "^2.1.0",
     "typescript": "^5.5.4"

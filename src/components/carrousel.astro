@@ -1,0 +1,38 @@
+---
+    import CarrouselItem from "../components/carrousel_item.astro"
+
+    export interface Props {
+        title: string,
+        array: Array<string>;
+    }
+
+    const {title,array} = Astro.props;
+---
+
+<h2 class="text-blue-custom text-3xl text-center">{title}</h2>
+<!-- Carrousel para lenguajes de programacion-->
+{array.length>=3 &&
+    <div class="swiper">
+        <div class="swiper-wrapper flex items-center py-10 px-2">
+            <!-- Los slides -->
+            {array.map(x=>{
+                return <CarrouselItem url={x}/>
+            })}
+        </div>
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+}
+
+{array.length<3 &&
+    <div class="flex items-center justify-center">
+        <div class="py-10 px-2">
+            <!-- Los slides -->
+            {array.map(x=>{
+                return <CarrouselItem url={x}/>
+            })}
+        </div>
+    </div>
+}
