@@ -34,3 +34,18 @@
         /* #1034a9 */
     );
 }
+
+
+@keyframes scale-a-lil {
+    from {
+      scale: .7;
+    }
+  }
+    
+  @media (prefers-reduced-motion: no-preference) {
+    .section {
+      animation: scale-a-lil linear both;
+      animation-timeline: view();
+      animation-range: 25vh 75vh;
+    }
+  }
