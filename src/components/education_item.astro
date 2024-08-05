@@ -3,13 +3,10 @@
     const {title, subtitle, description, date} = Astro.props;
 ---
 
-<li class="mb-10 ms-6">            
-    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-400 rounded-full -start-3 ring-8 ring-blue-custom/80 dark:bg-blue-custom-light/90">
-        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-        </svg>
+<li class="mb-10 ms-6  border-blue-custom p-2 border-solid border-[1px] shadow-custom-blue-two bg-gray-900/60">            
+    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-400 rounded-full -start-3 ring-4 ring-blue-custom/80 dark:bg-blue-custom-light/90">
     </span>
-    <h3 class="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-blue-custom">{title} <span class=" w-[40%] max-w-[100px] text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-custom-light dark:text-white ms-3 text-center ">{date}</span></h3>
+    <h3 class="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-blue-custom ">{title} <span class=" w-[50%] max-w-[100px] text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-custom-light/80 dark:text-white ms-3 text-center shadow-custom-blue-min">{date}</span></h3>
     <time class="block mb-2 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">{subtitle}</time>
-    <p class="mb-4 text-base font-normal text-gray-200 dark:text-gray-200 font-sourceCode text-[14px]">{description}</p>
+    <p class="mb-4 text-base font-normal text-gray-200 dark:text-gray-200 font-sourceCode text-[14px] ">{description}</p>
 </li>
