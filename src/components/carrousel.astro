@@ -1,9 +1,15 @@
 ---
     import CarrouselItem from "../components/carrousel_item.astro"
 
+
+    interface Item{
+        url: string,
+        name: string
+    };
+
     export interface Props {
         title: string,
-        array: Array<string>;
+        array: Array<Item>
     }
 
     const {title,array} = Astro.props;
@@ -16,7 +22,7 @@
         <div class="swiper-wrapper flex items-center py-10 w-full  ">
             <!-- Los slides -->
             {array.map(x=>{
-                return <CarrouselItem url={x}/>
+                return <CarrouselItem url={x.url}/>
             })}
         </div>
         <!-- Botones de navegación -->
@@ -30,7 +36,7 @@
         <div class="py-10 px-2">
             <!-- Los slides -->
             {array.map(x=>{
-                return <CarrouselItem url={x}/>
+                return <CarrouselItem url={x.url}/>
             })}
         </div>
     </div>

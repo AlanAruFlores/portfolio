@@ -1,39 +1,101 @@
 --- 
+    import { ProgramUpdateLevel } from "typescript";
     import Carrousel from "../components/carrousel.astro";
     import LineCarrousel from "../components/line_carrousel.astro";
+    const programmingLanguagesImages = [
+    {
+        url: "/public/img/languages/html-5.svg",
+        name: "HTML"
+    },
+    {
+        url: "/public/img/languages/css.svg",
+        name: "CSS"
+    },
+    {
+        url: "/public/img/languages/javascript.svg",
+        name: "JavaScript"
+    },
+    {
+        url: "/public/img/languages/java.svg",
+        name: "Java"
+    },
+    {
+        url: "/public/img/languages/php.svg",
+        name: "PHP"
+    }
+];
+const databasesImages = [
+    {
+        url: "/public/img/languages/mysql.svg",
+        name: "MySQL"
+    }
+];
 
-    const programmingLanguagesImages=[
-        "/public/img/languages/html-5.svg",
-        "/public/img/languages/css.svg",
-        "/public/img/languages/javascript.svg",
-        "/public/img/languages/java.svg",
-        "/public/img/languages/php.svg"
-    ];
+const frameworksImages = [
+    {
+        url: "/public/img/languages/spring_boot.png",
+        name: "Spring Boot"
+    },
+    {
+        url: "/public/img/languages/spring.svg",
+        name: "Spring"
+    },
+    {
+        url: "/public/img/languages/hibernate.svg",
+        name: "Hibernate"
+    },
+    {
+        url: "/public/img/languages/jpa.png",
+        name: "JPA"
+    },
+    {
+        url: "/public/img/languages/spring_security.png",
+        name: "Spring Security"
+    },
+    {
+        url: "/public/img/languages/thymeleaf.svg",
+        name: "Thymeleaf"
+    },
+    {
+        url: "/public/img/languages/angular.svg",
+        name: "Angular"
+    },
+    {
+        url: "/public/img/languages/bootstrap.svg",
+        name: "Bootstrap"
+    },
+    {
+        url: "/public/img/languages/astro.svg",
+        name: "Astro"
+    },
+    {
+        url: "/public/img/languages/tailwind.svg",
+        name: "Tailwind"
+    }
+];
+const toolsImages = [
+    {
+        url: "/public/img/tools/git.svg",
+        name: "Git"
+    },
+    {
+        url: "/public/img/tools/eclipse-icon.svg",
+        name: "Eclipse"
+    },
+    {
+        url: "/public/img/tools/intellij-idea.svg",
+        name: "IntelliJ IDEA"
+    },
+    {
+        url: "/public/img/tools/visual-studio-code.svg",
+        name: "VS Code"
+    },
+    {
+        url: "/public/img/tools/postman-icon.svg",
+        name: "Postman"
+    }
+];
 
-    const databasesImages = [
-    "/public/img/languages/mysql.svg"
-    ];
-
-    const frameworksImages=[
-        "/public/img/languages/spring_boot.png",
-        "/public/img/languages/spring.svg",
-        "/public/img/languages/hibernate.svg",
-        "/public/img/languages/jpa.png",
-        "/public/img/languages/spring_security.png",
-        "/public/img/languages/thymeleaf.svg",
-        "/public/img/languages/angular.svg",
-        "/public/img/languages/bootstrap.svg",
-        "/public/img/languages/astro.svg",
-        "/public/img/languages/tailwind.svg"
-    ];
-
-    const toolsImages=[
-        "/public/img/tools/git.svg",
-        "/public/img/tools/eclipse-icon.svg",
-        "/public/img/tools/intellij-idea.svg",
-        "/public/img/tools/visual-studio-code.svg",
-        "/public/img/tools/postman-icon.svg"
-    ]
 ---
 <div class="section w-full h-[500px]">
     <div class="w-[80%] max-w-[900px] mx-auto">
@@ -51,41 +113,31 @@
         
             <Carrousel title={"Herramientas"} array={toolsImages}/>
         </div>     
-        <div class="grid_technologies w-full h-[750px]">
-            <div class="grid_frameworks bg-gray-950 shadow-custom-light-blue">
-                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Frameworks</h2>
-                <div class="flex flex-row justify-center flex-wrap p-4 gap-14">
-
-                    {frameworksImages.map(x=>
-                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
-               
-                </div>
-            </div>
-            <div class="grid_databases bg-gray-950 shadow-custom-light-blue">
-                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Bases de datos</h2>
-                <div class="flex flex-row justify-center flex-wrap p-4 gap-14">
-
-                {databasesImages.map(x=>
-                    <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
-
-                </div>
-            </div>
-            <div class="grid_languages bg-gray-950 shadow-custom-light-blue">
-                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] ">Lenguajes</h2>
-
-                <div class="flex flex-row justify- flex-wrap p-4 gap-12">
-                    {programmingLanguagesImages.map(x=>
-                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
-                </div>
-            </div>
-            <div class="grid_tools bg-gray-950 shadow-custom-light-blue">
-                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Herramientas</h2>
-
-                <div class="flex flex-row justify-around flex-wrap p-4 gap-10">
-                    {toolsImages.map(x=>
-                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
-                </div>
-            </div>
+        <div class="mx-auto flex justify-center flex-wrap gap-6">
+            {programmingLanguagesImages.map(x=>
+                    <div class="w-24 h-24 bg-gray-950/50 shadow-custom-black-blue-difumined-min flex flex-col justify-center items-center gap-2 p-6">
+                        <img src={x.url} alt="image" class="w-10 h-10">
+                        <p class="text-blue-custom text-[14px]">{x.name}</p>
+                    </div>
+            )}
+            {databasesImages.map(x=>
+                    <div class="w-24 h-24 bg-gray-950/50 shadow-custom-black-blue-difumined-min flex flex-col justify-center items-center gap-2 p-6">
+                        <img src={x.url} alt="image" class="w-10 h-10">
+                        <p class="text-blue-custom text-[14px]">{x.name}</p>
+                    </div>
+            )}
+            {frameworksImages.map(x=>
+                    <div class="w-24 h-24 bg-gray-950/50 shadow-custom-black-blue-difumined-min flex flex-col justify-center items-center gap-2 p-0">
+                        <img src={x.url} alt="image" class="w-10 h-10">
+                        <p class="text-blue-custom text-center text-[14px]">{x.name}</p>
+                    </div>
+            )}
+            {toolsImages.map(x=>
+                    <div class="w-24 h-24 bg-gray-950/50 shadow-custom-black-blue-difumined-min flex flex-col justify-center items-center gap-2 p-0">
+                        <img src={x.url} alt="image" class="w-10 h-10">
+                        <p class="text-blue-custom text-[14px]">{x.name}</p>
+                    </div>
+            )}
         </div>
     </div>
 </div>
