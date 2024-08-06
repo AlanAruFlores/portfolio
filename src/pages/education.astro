@@ -49,13 +49,14 @@
 ---
 
 
-<div class="section w-full py-20 mt-14 md:mt-0 text-white">
-    <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl shadow-red-100 text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(37_110_255/_100%)]">&lt;Educacion/&gt;</h1>
+<div class="section w-full py-8 ">
+    <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl  text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]  font-bold">&lt;Educacion/&gt;</h1>
+    <!-- [text-shadow:_0_0px_10px_rgb(37_110_255/_100%)] -->
     <div class="py-8 flex flex-col items-center w-[80%] max-w-[900px] mx-auto md:flex-row md:gap-10 md:items-start">  
-        <ol class="relative border-s border-gray-200 dark:border-blue-custom mx-auto">                  
+        <ol class="relative border-s dark:border-blue-custom mx-auto">                  
             {educationsOneArray.map(x=><EducationItem title={x.title} subtitle={x.subtitle} description={x.description} date={x.date}/>)}  
         </ol>       
-         <ol class="relative border-s border-gray-200 dark:border-blue-custom mx-auto">                  
+         <ol class="relative border-s dark:border-blue-custom mx-auto">                  
             {educationsTwoArray.map(x=><EducationItem title={x.title} subtitle={x.subtitle} description={x.description} date={x.date}/>)}  
         </ol>
     </div>

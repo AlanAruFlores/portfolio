@@ -3,10 +3,10 @@
     const {title, subtitle, description, date} = Astro.props;
 ---
 
-<li class="mb-10 ms-6  border-blue-custom p-2 border-solid border-[1px] shadow-custom-blue-two bg-gray-900/60">            
-    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-400 rounded-full -start-3 ring-4 ring-blue-custom/80 dark:bg-blue-custom-light/90">
+<li class="mb-10 ms-6 shadow-custom-light-blue p-2 bg-gray-950">            
+    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-custom -start-3 ring-2 ring-blue-custom/90 shadow-custom-blue-two">
     </span>
-    <h3 class="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-blue-custom ">{title} <span class=" w-[50%] max-w-[100px] text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-custom-light/80 dark:text-white ms-3 text-center shadow-custom-blue-min">{date}</span></h3>
-    <time class="block mb-2 text-lg font-normal leading-none text-gray-400 dark:text-gray-400">{subtitle}</time>
-    <p class="mb-4 text-base font-normal text-gray-200 dark:text-gray-200 font-sourceCode text-[14px] ">{description}</p>
+    <h3 class="flex items-center mb-1 text-xl font-bold  dark:text-blue-custom ">{title} <span class=" w-[50%] max-w-[100px] text-[13px] lg:text-[16px] me-2 px-2.5 py-0.5  dark:text-black font-bold ms-3 text-center shadow-custom-blue-min bg-blue-custom text-black">{date}</span></h3>
+    <time class="block mb-2 text-lg font-normal leading-none text-black dark:text-white">{subtitle}</time>
+    <p class="mb-4 text-base font-normal text-black dark:text-white font-sourceCode text-[14px] ">{description}</p>
 </li>

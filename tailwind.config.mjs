@@ -4,18 +4,17 @@ export default {
 	theme: {
 		extend: {
 			backgroundColor:{
-				"blue-custom": "#071952",
-				"blue-custom-light":"#2267F2"
+				"blue-custom": "#11F0FB",
+				"blue-custom-light":"#11F0FB"
 			},
 			colors:{
-				"blue-custom": "#2267F2",
+				"blue-custom": "#11F0FB",
 			},
 			borderColor:{
-				"light-blue":"#071952",
+				"light-blue":"#11F0FB",
 			},
 			backgroundImage:{
 				"wave": "url('../img/wave.svg')",
-				"wave-reverse": "url('../img/wave-reverse.svg')",
 				"pixel": "url('../img/pixel.svg')"
 			},
 			fontFamily:{
@@ -24,13 +23,17 @@ export default {
 			},
 			boxShadow:{
 				"custom": "0px 0px 4px 1px #FFFFFF",
-				"custom-blue": "0px 0px 15px 10px #071952",
-				"custom-blue-hover": "0px 0px 15px 20px #071952",
-				"custom-blue-two": "0px 0px 10px 2px #071952",
-				"custom-blue-min": "0px 0px 4px 4px #071952",
+				"custom-black-blue": "2px -1px 0px 2px #11F0FB",
+				"custom-black": "1px -2px 0px 1px #000000",
+				"custom-white": "1px -2px 0px 1px #FFFFFF",
+				"custom-light-blue": "1px -2px 0px 1px #11F0FB",
+				"custom-blue": "0px 0px 15px 10px #11F0FB",
+				"custom-blue-hover": "0px 0px 15px 20px #11F0FB",
+				"custom-blue-two": "0px 0px 10px 2px #11F0FB",
+				"custom-blue-min": "0px 0px 4px 0px #11F0FB",
 			},
 			dropShadow:{
-				'blue-custom': '0 0 20px #2267F2',
+				'blue-custom': '0 0 20px #5DF7FF',
 			}
 		},
 	},
