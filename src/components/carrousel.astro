@@ -13,7 +13,7 @@
 <!-- Carrousel para lenguajes de programacion-->
 {array.length>=3 &&
     <div class="swiper">
-        <div class="swiper-wrapper flex items-center py-10 px-2">
+        <div class="swiper-wrapper flex items-center py-10 w-full  ">
             <!-- Los slides -->
             {array.map(x=>{
                 return <CarrouselItem url={x}/>
@@ -22,7 +22,6 @@
         <!-- Botones de navegación -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-
     </div>
 }
 

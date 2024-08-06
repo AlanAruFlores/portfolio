@@ -37,18 +37,56 @@
 ---
 <div class="section w-full h-[500px]">
     <div class="w-[80%] max-w-[900px] mx-auto">
-        <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl shadow-red-100 text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(37_110_255/_100%)]">&lt;Tecnologias/&gt;</h1>
-        
-        <Carrousel title={"Lenguajes de Programacion"} array={programmingLanguagesImages}/>
-        <LineCarrousel/>
-
-        <Carrousel title={"Bases de Datos"} array={databasesImages}/>
-        <LineCarrousel/>
-
-        <Carrousel title={"Frameworks"} array={frameworksImages}/>
-        <LineCarrousel/>
+        <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl  text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]  font-bold">&lt;Tecnologias/&gt;</h1>  
+        <!-- Modo mobile -->
+        <div class="md:hidden">
+            <Carrousel title={"Lenguajes"} array={programmingLanguagesImages}/>
+            <LineCarrousel/>
     
-        <Carrousel title={"Herramientas"} array={toolsImages}/>
+            <Carrousel title={"Bases de Datos"} array={databasesImages}/>
+            <LineCarrousel/>
+    
+            <Carrousel title={"Frameworks"} array={frameworksImages}/>
+            <LineCarrousel/>
+        
+            <Carrousel title={"Herramientas"} array={toolsImages}/>
+        </div>     
+        <div class="grid_technologies w-full h-[750px]">
+            <div class="grid_frameworks bg-gray-950 shadow-custom-light-blue">
+                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Frameworks</h2>
+                <div class="flex flex-row justify-center flex-wrap p-4 gap-14">
+
+                    {frameworksImages.map(x=>
+                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
+               
+                </div>
+            </div>
+            <div class="grid_databases bg-gray-950 shadow-custom-light-blue">
+                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Bases de datos</h2>
+                <div class="flex flex-row justify-center flex-wrap p-4 gap-14">
+
+                {databasesImages.map(x=>
+                    <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
+
+                </div>
+            </div>
+            <div class="grid_languages bg-gray-950 shadow-custom-light-blue">
+                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] ">Lenguajes</h2>
+
+                <div class="flex flex-row justify- flex-wrap p-4 gap-12">
+                    {programmingLanguagesImages.map(x=>
+                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
+                </div>
+            </div>
+            <div class="grid_tools bg-gray-950 shadow-custom-light-blue">
+                <h2 class="text-blue-custom text-3xl px-4 py-2 [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]">Herramientas</h2>
+
+                <div class="flex flex-row justify-around flex-wrap p-4 gap-10">
+                    {toolsImages.map(x=>
+                        <img src={x} class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">)}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
