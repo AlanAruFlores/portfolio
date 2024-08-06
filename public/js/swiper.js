@@ -18,3 +18,15 @@ const swiper = new Swiper(".swiper", {
     
     }
 });
+
+const swiper2 = new Swiper(".swiper2", {
+    modules: [Navigation], // definir los módulos a usar
+    loop: true,            // definir si los slides estarán en bucle
+    slidesPerView: 1,      // agregar número de slides para la pantalla
+    spaceBetween: 20,      // separación entre slides en px
+    navigation: {          // definir botones next y prev para el módulo Navigation
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    
+    }
+});

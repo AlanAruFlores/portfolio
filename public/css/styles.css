@@ -34,6 +34,13 @@
         /* #1034a9 */
     );
 }
+.backImage{
+    mask-image: linear-gradient(
+        #030030 60%,
+        transparent
+        /* #1034a9 */
+    );
+}
 /* 
 .grid_technologies{
     display: grid;

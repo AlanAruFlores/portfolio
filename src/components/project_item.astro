@@ -1,0 +1,12 @@
+---
+
+export interface Props {
+    array: Array<string>;
+}
+const { array } = Astro.props;
+---
+<div class="mt-4 flex gap-2 flex-wrap">
+    {array.map(x=>
+        <div  class="text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] shadow-custom-blue-min inline-block px-2 py-1">{x}</div>
+    )}
+</div>

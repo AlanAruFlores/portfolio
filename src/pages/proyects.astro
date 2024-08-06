@@ -1,5 +1,76 @@
-<div class="w-full h-[650px]">
+---
+import ProjectItem from "../components/project_item.astro";
 
+const flyBondyTechnologies = [
+    "Spring Boot",
+    "Thymeleaf",
+    "Spring Security",
+    "Spring JPA",
+    "Bootstrap",
+];
 
-    
+const monopolyTechnologies= [
+    "Spring",
+    "Thymeleaf",
+    "Spring JPA",
+    "Javascript",
+    "WebSocket"
+]
+---
+
+<div class="max-w-[900px] mx-auto py-20 section">
+    <h1
+        class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] font-bold"
+    >
+        &lt;Proyectos/&gt;
+    </h1>
+
+    <div class="hidden lg:block">
+        <div class="swiper2 overflow-hidden">
+            <div class="swiper-wrapper flex items-center py-10 w-full">
+                <div class="swiper-slide">
+                    <div
+                    class="bg-flybondi relative bg-cover bg-gray-950 bg-opacity-60 bg-no-repeat bg-left bg-blend-darken h-[500px] backImage flex flex-col justify-center px-60 hover:bg-opacity-0 transition-all">
+                        <div
+                            class="left-14 m-2 absolute w-[250px] shadow-custom-black-blue-difumined-min bg-black/80 p-2">
+                            <h3 class="text-blue-custom text-2xl">Flybondi</h3>
+                            <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, deleniti dolorem? Officia nihil nemo perferendis.</p>
+                            <ProjectItem array={flyBondyTechnologies}/>
+                                <a
+                                    href="#"
+                                    class="bg-white absolute top-0 right-0 flex m-3 px-2">
+                                    <img src="/public/img/github.svg" class="w-5" />
+                                    <p>GitHub</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                    class="bg-monopoly relative bg-cover bg-gray-950 bg-opacity-60 bg-no-repeat bg-bottom bg-blend-darken h-[500px] backImage flex flex-col justify-center px-60 hover:bg-opacity-0 transition-all">
+                        <div
+                            class="left-14 m-2 absolute w-[250px] shadow-custom-black-blue-difumined-min bg-black/80 p-2">
+                            <h3 class="text-blue-custom text-2xl">Monopoly</h3>
+                            <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, deleniti dolorem? Officia nihil nemo perferendis.</p>
+                            <ProjectItem array={monopolyTechnologies}/>
+                                <a
+                                    href="#"
+                                    class="bg-white absolute top-0 right-0 flex m-3 px-2"
+                                >
+                                    <img src="/public/img/github.svg" class="w-5" />
+                                    <p>GitHub</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
 </div>
+
+<script src="../../public/js/swiper.js"></script>
