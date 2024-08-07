@@ -20,57 +20,59 @@ const monopolyTechnologies= [
 
 <div class="max-w-[900px] mx-auto py-20 section">
     <h1
-        class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] font-bold"
-    >
-        &lt;Proyectos/&gt;
+        class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] font-bold">
+  
+      &lt;Proyectos/&gt;
     </h1>
-
-    <div class="hidden lg:block">
-        <div class="swiper2 overflow-hidden">
-            <div class="swiper-wrapper flex items-center py-10 w-full">
-                <div class="swiper-slide">
-                    <div
-                    class="bg-flybondi relative bg-cover bg-gray-950 bg-opacity-60 bg-no-repeat bg-left bg-blend-darken h-[500px] backImage flex flex-col justify-center px-60 hover:bg-opacity-0 transition-all">
-                        <div
-                            class="left-14 m-2 absolute w-[250px] shadow-custom-black-blue-difumined-min bg-black/80 p-2">
-                            <h3 class="text-blue-custom text-2xl">Flybondi</h3>
-                            <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, deleniti dolorem? Officia nihil nemo perferendis.</p>
-                            <ProjectItem array={flyBondyTechnologies}/>
-                                <a
-                                    href="#"
-                                    class="bg-white absolute top-0 right-0 flex m-3 px-2">
-                                    <img src="/public/img/github.svg" class="w-5" />
-                                    <p>GitHub</p>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div
-                    class="bg-monopoly relative bg-cover bg-gray-950 bg-opacity-60 bg-no-repeat bg-bottom bg-blend-darken h-[500px] backImage flex flex-col justify-center px-60 hover:bg-opacity-0 transition-all">
-                        <div
-                            class="left-14 m-2 absolute w-[250px] shadow-custom-black-blue-difumined-min bg-black/80 p-2">
-                            <h3 class="text-blue-custom text-2xl">Monopoly</h3>
-                            <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, deleniti dolorem? Officia nihil nemo perferendis.</p>
-                            <ProjectItem array={monopolyTechnologies}/>
-                                <a
-                                    href="#"
-                                    class="bg-white absolute top-0 right-0 flex m-3 px-2"
-                                >
-                                    <img src="/public/img/github.svg" class="w-5" />
-                                    <p>GitHub</p>
-                                </a>
-                        </div>
-                    </div>
-                </div>
+    <div class="flex flex-col gap-8 md:gap-2 items-center md:flex-row md:flex-wrap w-[90%] mx-auto justify-center">
+        <!-- Project 1 -->
+        <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
+            <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
             </div>
-
-            <!-- Botones de navegación -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+            <p class="text-white
+            text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
+            <ProjectItem array={flyBondyTechnologies}/>
+            <div class="flex flex-row justify-center gap-2">
+                <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                    <img src="/public/img/github.svg" class="w-5" />
+                    <p class="text-xl">GitHub</p>
+                </a>
+            </div>
+      </div>
+    
+      <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
+        <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
         </div>
-
+        <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+        <p class="text-white
+        text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
+        <ProjectItem array={flyBondyTechnologies}/>
+        <div class="flex flex-row justify-center gap-2">
+            <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                <img src="/public/img/github.svg" class="w-5" />
+                <p class="text-xl">GitHub</p>
+            </a>
+        </div>      
     </div>
-</div>
 
+    <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
+        <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
+        </div>
+        <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+        <p class="text-white
+        text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
+        <ProjectItem array={flyBondyTechnologies}/>
+        <div class="flex flex-row justify-center gap-2">
+            <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                <img src="/public/img/github.svg" class="w-5" />
+                <p class="text-xl">GitHub</p>
+            </a>
+        </div>
+            
+    </div>
+    </div>
+
+
+</div>
 <script src="../../public/js/swiper.js"></script>
