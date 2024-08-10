@@ -1,11 +1,29 @@
-<div class="w-[80%] max-w-[900px] mx-auto py-20 section">
+<div class="max-w-[900px] mx-auto py-20 section">
     <h1 class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl  text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)]  font-bold">&lt;Contactame/&gt;</h1>
 
-    <form class="bg-gray-950/50 shadow-custom-black-blue-difumined-min py-4 space-y-8">
-        <input type="text" class="block mx-auto h-10 w-[90%] bg-blue-custom/90">
-        <input type="text" class="block mx-auto h-10 w-[90%]  bg-blue-custom/90">
-        <input type="text" class="block mx-auto h-10 w-[90%]  bg-blue-custom/90">
-        <textarea name="" id="textarea" cols="50" rows="10" class="mx-auto block w-[90%] bg-blue-custom/90"></textarea>
-    </form>
-
+    <div class="flex flex-col md:flex-row justify-around gap-8 items-center py-[30px] md:py-[60px]">
+        <div class="">
+            <img src="/public/img/ghost.png" class=" w-[200px] md:w-[300px] drop-shadow-blue-custom-solid">
+        </div>
+        <form class="bg-gray-950/50 w-[100%] max-w-[350px] md:w-[55%] md:max-w-none shadow-custom-black-blue-difumined-min py-4 space-y-8 border-[0.5px] border-blue-custom">
+            <div>
+                <label for="from" class="text-white text-2xl w-[90%] mx-auto block">From</label>
+                <input type="text" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="From">
+            </div>
+            <div>
+                <label for="to" class="text-white text-2xl w-[90%] mx-auto block">To</label>
+                <input type="text" id="to" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="To">
+            </div>           
+            <div>
+                <label for="Subject" class="text-white text-2xl w-[90%] mx-auto block">Subject</label>
+                <input type="text" id="Subject" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="Subject">
+            </div>
+            <div>
+                <label for="Message" class="text-white text-2xl w-[90%] mx-auto block">Message</label>
+                <textarea name="" id="Message" cols="50" rows="4" class="mx-auto block w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white"></textarea>
+            </div>
+            <button class="bg-white text-black text-3xl py-1 w-[90%] block mx-auto">Enviar</button>
+        </form>
+    </div>
+   
 </div>

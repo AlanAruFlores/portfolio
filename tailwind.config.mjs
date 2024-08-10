@@ -38,6 +38,8 @@ export default {
 			},
 			dropShadow:{
 				'blue-custom': '0 0 20px #5DF7FF',
+				'blue-custom-solid': '-6px 0 0px #00C2D7',
+
 			}
 		},
 	},

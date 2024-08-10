@@ -9,70 +9,93 @@ const flyBondyTechnologies = [
     "Bootstrap",
 ];
 
-const monopolyTechnologies= [
+const monopolyTechnologies = [
     "Spring",
     "Thymeleaf",
     "Spring JPA",
     "Javascript",
-    "WebSocket"
-]
+    "WebSocket",
+];
 ---
 
 <div class="max-w-[900px] mx-auto py-20 section">
     <h1
-        class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] font-bold">
-  
-      &lt;Proyectos/&gt;
+        class="w-[80%] max-w-[900px] mx-auto text-4xl mb-6 text-center lg:text-5xl text-shadow text-blue-custom [text-shadow:_0_0px_10px_rgb(93_247_255/_100%)] font-bold"
+    >
+        &lt;Proyectos/&gt;
     </h1>
-    <div class="flex flex-col gap-8 md:gap-2 items-center md:flex-row md:flex-wrap w-[90%] mx-auto justify-center">
-        <!-- Project 1 -->
-        <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
-            <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
+    <div
+        class="flex flex-col gap-8 md:gap-2 items-center md:flex-row md:flex-wrap w-[90%] mx-auto justify-center"
+    >
+    <!-- ROW PROJECTS 1 -->
+        <div class="flex flex-col md:flex-row gap-4">
+            <!-- Project 1 -->
+            <div
+                class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all shadow-custom-black-blue-difumined-min max-w-[350px] p-2 space-y-4"
+            >
+                <div
+                    class="bg-flybondi h-[200px] bg-cover bg-no-repeat bg-blend-darken"
+                >
+                </div>
+                <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+                <p class="text-white
+    text-2xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, maiores veniam deleniti ea beatae amet?
+                </p>
+                <ProjectItem array={flyBondyTechnologies} />
+                <div class="flex flex-row justify-center gap-2">
+                    <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                        <img src="/public/img/github.svg" class="w-5" />
+                        <p class="text-xl">GitHub</p>
+                    </a>
+                </div>
             </div>
-            <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
-            <p class="text-white
-            text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
-            <ProjectItem array={flyBondyTechnologies}/>
-            <div class="flex flex-row justify-center gap-2">
-                <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
-                    <img src="/public/img/github.svg" class="w-5" />
-                    <p class="text-xl">GitHub</p>
-                </a>
+
+            <div
+                class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all shadow-custom-black-blue-difumined-min max-w-[350px] p-2 space-y-4"
+            >
+                <div
+                    class="bg-flybondi h-[200px] bg-cover bg-no-repeat bg-blend-darken"
+                >
+                </div>
+                <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+                <p class="text-white
+text-2xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, maiores veniam deleniti ea beatae amet?
+                </p>
+                <ProjectItem array={flyBondyTechnologies} />
+                <div class="flex flex-row justify-center gap-2">
+                    <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                        <img src="/public/img/github.svg" class="w-5" />
+                        <p class="text-xl">GitHub</p>
+                    </a>
+                </div>
             </div>
-      </div>
-    
-      <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
-        <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
-        </div>
-        <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
-        <p class="text-white
-        text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
-        <ProjectItem array={flyBondyTechnologies}/>
-        <div class="flex flex-row justify-center gap-2">
-            <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
-                <img src="/public/img/github.svg" class="w-5" />
-                <p class="text-xl">GitHub</p>
-            </a>
-        </div>      
-    </div>
 
-    <div class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all  shadow-custom-black-blue-difumined-min w-[80%] max-w-[350px] p-2 space-y-4">
-        <div class="bg-flybondi h-[200px] bg-cover bg-no-repeat  bg-blend-darken">
+            <div
+                class="bg-gray-950/50 opacity-70 hover:opacity-100 transition-all shadow-custom-black-blue-difumined-min max-w-[350px] p-2 space-y-4"
+            >
+                <div
+                    class="bg-flybondi h-[200px] bg-cover bg-no-repeat bg-blend-darken"
+                >
+                </div>
+                <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
+                <p class="text-white
+text-2xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, maiores veniam deleniti ea beatae amet?
+                </p>
+                <ProjectItem array={flyBondyTechnologies} />
+                <div class="flex flex-row justify-center gap-2">
+                    <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
+                        <img src="/public/img/github.svg" class="w-5" />
+                        <p class="text-xl">GitHub</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <h3 class="text-blue-custom text-3xl text-center">FlyBondi</h3>
-        <p class="text-white
-        text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maiores veniam deleniti ea beatae amet?</p>
-        <ProjectItem array={flyBondyTechnologies}/>
-        <div class="flex flex-row justify-center gap-2">
-            <a href="#" class="bg-white top-0 right-0 flex w-24 p-2">
-                <img src="/public/img/github.svg" class="w-5" />
-                <p class="text-xl">GitHub</p>
-            </a>
-        </div>
-            
     </div>
-    </div>
-
-
 </div>
 <script src="../../public/js/swiper.js"></script>
