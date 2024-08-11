@@ -15,6 +15,7 @@ export default {
 			},
 			backgroundImage:{
 				"wave": "url('../img/wave.svg')",
+				"wave-reverse": "url('../img/wave-reverse.svg')",
 				"pixel": "url('../img/pixel.svg')",
 				"flybondi": "url('../img/projects/flybondi.png')",
 				"monopoly": "url('../img/projects/monopoly.png')"
