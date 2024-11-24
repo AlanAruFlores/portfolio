@@ -18,7 +18,14 @@ export default {
 				"wave-reverse": "url('../img/wave-reverse.svg')",
 				"pixel": "url('../img/pixel.svg')",
 				"flybondi": "url('../img/projects/flybondi.png')",
-				"monopoly": "url('../img/projects/monopoly.png')"
+				"monopoly": "url('../img/projects/monopoly.png')",
+				"quizquest": "url('../img/projects/quizquest.PNG')",
+				"ripple": "url('../img/projects/ripple.jpeg')",
+				"knowme": "url('../img/projects/knowme.PNG')",
+				"fakefy": "url('../img/projects/fakefy.png')",
+				"pokedex": "url('../img/projects/pokedex.png')",
+				"arttech": "url('../img/projects/ecommerce-jsp.jpeg')",
+				"todo": "url('../img/projects/todo-nodejs.png')"
 			},
 			fontFamily:{
 				"merriweather":'"Merriweather Sans", sans-serif',
