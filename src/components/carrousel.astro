@@ -31,9 +31,10 @@
     </div>
 }
 
+
 {array.length<3 &&
     <div class="flex items-center justify-center">
-        <div class="py-10 px-2">
+        <div class="py-10 flex ">
             <!-- Los slides -->
             {array.map(x=>{
                 return <CarrouselItem url={x.url}/>
