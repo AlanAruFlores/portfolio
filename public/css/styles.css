@@ -29,10 +29,12 @@
 
 .image{
     mask-image: linear-gradient(
-        #030030 40%,
+        #030030 5%,
         transparent
         /* #1034a9 */
     );
+
+    border-radius: 50%;
 }
 .backImage{
     mask-image: linear-gradient(
