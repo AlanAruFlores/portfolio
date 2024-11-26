@@ -3,6 +3,10 @@
     src: url(../fonts/ProggyClean.ttf);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .font_proggy{
     font-family: proggy;
 }

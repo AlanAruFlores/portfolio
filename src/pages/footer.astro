@@ -1,19 +1,19 @@
 ---
     const socialMediasArray2 = [
         {
-            url: "#",
-            src: "/public/img/media/twitter.svg"
+            url: "https://www.linkedin.com/in/alan-nahuel-aruquipa-flores-8949542b8/",
+            src: "/public/img/media/linkedin.svg"
         },
         {
-            url: "#",
+            url: "https://www.facebook.com/people/Alan-Aru/pfbid02urmunYxofbgwV23BMNm7mEs8qy5aKCUv2Seeu8uinT6o3RH4x89bVqnXYnYc3gF5l/",
             src: "/public/img/media/facebook.svg"
         },
         {
-            url: "#",
+            url: "https://www.instagram.com/alanflow2022/?igshid=MzNlNGNkZWQ4Mg%3D%3D",
             src: "/public/img/media/instagram.svg"
         },
         {
-            url: "#",
+            url: "https://github.com/AlanAruFlores",
             src: "/public/img/media/github.svg"
         },
     ]
@@ -25,19 +25,19 @@
         <div class="mt-2 text-2xl font-bold space-y-10 md:flex md:flex-row md:justify-between md:space-y-0">
             <div class="flex flex-row justify-between px-4 md:px-0 md:gap-40">
                 <ul class="space-y-2 md:space-y-0">
-                    <li>&lt;SobreMi/&gt;</li>
-                    <li>&lt;Educacion/&gt;</li>
-                    <li>&lt;Tecnologias/&gt;</li>
+                    <li><a href="#SobreMi">&lt;SobreMi/&gt;</a></li>
+                    <li><a href="#Educacion">&lt;Educacion/&gt;</a></li>
+                    <li><a href="#Tecnologias">&lt;Tecnologias/&gt;</a></li>
                 </ul>
                 <ul class="space-y-2 md:space-y-0">
-                    <li>&lt;Proyectos/&gt;</li>
-                    <li>&lt;Contactame/&gt;</li>
+                    <li><a href="#Proyectos">&lt;Proyectos/&gt;</a></li>
+                    <li><a href="#Contactame">&lt;Contactame/&gt;</a></li>
                 </ul>
             </div>
             
             <div class="flex flex-row justify-center gap-4 h-10">
                 {socialMediasArray2.map(x=>
-                    <a href={x.url} class="w-10 bg-black p-1 shadow-custom-black-blue">
+                    <a href={x.url} class="w-10 bg-black p-1 shadow-custom-black-blue hover:bg-white transition-all">
                         <img src={x.src}>
                     </a>)}
             </div>

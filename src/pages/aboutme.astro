@@ -1,24 +1,24 @@
 ---
     const socialMediasArray = [
         {
-            url: "#",
-            src: "/public/img/media/twitter.svg"
+            url: "https://www.linkedin.com/in/alan-nahuel-aruquipa-flores-8949542b8/",
+            src: "/public/img/media/linkedin.svg"
         },
         {
-            url: "#",
+            url: "https://www.facebook.com/people/Alan-Aru/pfbid02urmunYxofbgwV23BMNm7mEs8qy5aKCUv2Seeu8uinT6o3RH4x89bVqnXYnYc3gF5l/",
             src: "/public/img/media/facebook.svg"
         },
         {
-            url: "#",
+            url: "https://www.instagram.com/alanflow2022/?igshid=MzNlNGNkZWQ4Mg%3D%3D",
             src: "/public/img/media/instagram.svg"
         },
         {
-            url: "#",
+            url: "https://github.com/AlanAruFlores",
             src: "/public/img/media/github.svg"
         },
     ]
 ---
-<div class="relative">
+<div class="relative" id="SobreMi">
     <div class="py-8 h-[850px] flex flex-col items-center w-[80%] max-w-[900px] md:h-[100vh] mx-auto
     md:flex-row-reverse md:justify-around md:pb-28 relative">
     <!-- <img src="/public/img/pixel.svg" class="w-[400px] drop-shadow-blue-custom"> -->
@@ -39,13 +39,13 @@
         <p class="text-black text-[14px] lg:text-[18px] font-sourceCode">Mi propósito es demostrar mis habilidades y capacidades adquiridas en mi formación profesional para poder satisfacer a las necesidades a resolver.</p>
         <div class="flex gap-2 lg:gap-4">
             {socialMediasArray.map(x=>
-                <a href={x.url} class="w-8 bg-black p-1 shadow-custom-black-blue lg:w-10">
+                <a href={x.url} class="w-8 bg-black p-1 shadow-custom-black-blue lg:w-10 hover:bg-white transition-all" target="_blank">
                     <img src={x.src}>
                 </a>)}
         </div>
         <div class="pt-4 space-x-3">
-            <a href="#" class="bg-black text-blue-custom py-2 px-4  text-xl md:text-2xl shadow-custom-black-blue hover:shadow-custom-blue-two transition-all">Descargar CV</a>
-            <a href="#" class="bg-black text-blue-custom py-2 px-4  text-xl md:text-2xl shadow-custom-black-blue hover:shadow-custom-blue-two transition-all">Contactame</a>
+            <a href="#" class="bg-black text-blue-custom py-2 px-4  text-xl md:text-2xl shadow-custom-black-blue hover:shadow-custom-blue-two transition-all hover:bg-white">Descargar CV</a>
+            <a href="#" class="bg-black text-blue-custom py-2 px-4  text-xl md:text-2xl shadow-custom-black-blue hover:shadow-custom-blue-two transition-all hover:bg-white">Contactame</a>
         </div>
 
     </div>
