@@ -5,26 +5,32 @@
         <div class="">
             <img src="/public/img/ghost.png" class=" w-[200px] md:w-[300px] drop-shadow-blue-custom-solid">
         </div>
-        <form class="bg-gray-950/50 w-[100%] max-w-[350px] md:w-[55%] md:max-w-none shadow-custom-black-blue-difumined-min py-4 space-y-8 border-[0.5px] border-blue-custom">
+        <div class="bg-gray-950/50 w-[100%] max-w-[350px] md:w-[55%] md:max-w-none shadow-custom-black-blue-difumined-min py-4 space-y-8 border-[0.5px] border-blue-custom">
             <div>
-                <label for="from" class="text-white text-2xl w-[90%] mx-auto block">From</label>
-                <input type="text" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="From">
+                <label for="from" class="text-white text-2xl w-[90%] mx-auto block">Full Name</label>
+                <input type="text" id="fullName" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="Your Name">
             </div>
             <div>
-                <label for="to" class="text-white text-2xl w-[90%] mx-auto block">To</label>
-                <input type="text" id="to" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="To">
+                <label for="to" class="text-white text-2xl w-[90%] mx-auto block">Mail Address</label>
+                <input type="text" id="emailAddress" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="Mail Address">
             </div>           
             <div>
-                <label for="Subject" class="text-white text-2xl w-[90%] mx-auto block">Subject</label>
-                <input type="text" id="Subject" class="block mx-auto h-10 w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white" placeholder="Subject">
-            </div>
-            <div>
                 <label for="Message" class="text-white text-2xl w-[90%] mx-auto block">Message</label>
-                <textarea name="" id="Message" cols="50" rows="4" class="mx-auto block w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white"></textarea>
+                <textarea name="" id="message" cols="50" rows="4" class="mx-auto block w-[90%] bg-transparent border-[0.1px] border-solid border-blue-custom text-2xl px-2 py-4 text-white"></textarea>
             </div>
-            <button class="bg-white text-black text-3xl py-1 w-[90%] block mx-auto">Enviar</button>
-        </form>
+            <button class="bg-white text-black text-3xl py-1 w-[90%] block mx-auto" id="sendEmail">Enviar</button>
+        </div>
     </div>
-   
 </div>
 <div class="bg-wave-reverse w-full h-10 md:h-16 bg-repeat-x"></div>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+    publicKey: "ioVytExuByq-cGS0U",
+});
+})();
+</script>
+<script src="../../public/js/email.js"></script>
