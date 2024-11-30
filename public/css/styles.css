@@ -76,11 +76,11 @@ html {
     grid-row: 5/6;
 } */
 
-@keyframes scale-a-lil {
-    from {
-      scale: .7;
+  @keyframes scale-a-lil {
+      from {
+        scale: .7;
+      }
     }
-  }
     
   @media (prefers-reduced-motion: no-preference) {
     .section {

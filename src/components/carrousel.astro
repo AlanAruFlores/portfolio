@@ -18,8 +18,8 @@
 <h2 class="text-blue-custom text-3xl text-center">{title}</h2>
 <!-- Carrousel para lenguajes de programacion-->
 {array.length>=3 &&
-    <div class="swiper">
-        <div class="swiper-wrapper flex items-center py-10 w-full  ">
+    <div class="swiper w-full">
+        <div class="swiper-wrapper flex items-center py-10">
             <!-- Los slides -->
             {array.map(x=>{
                 return <CarrouselItem url={x.url}/>
@@ -33,11 +33,13 @@
 
 
 {array.length<3 &&
-    <div class="flex items-center justify-center">
-        <div class="py-10 flex ">
+    <div class="flex items-center justify-center w-full">
+        <div class="py-10 flex gap-4">
             <!-- Los slides -->
             {array.map(x=>{
-                return <CarrouselItem url={x.url}/>
+                return <div class="">
+                    <img src={x.url} class="w-20 md:w-32 lg:w-36" alt="language" />
+                </div>
             })}
         </div>
     </div>
